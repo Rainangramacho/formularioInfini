@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <style>
+
+
+        hr{
+            border:1px solid #5a5a5a;
+
+        }
+
+        .respostas{
+            font-family: Verdana,sans-serif;
+
+        }
+
+        .pergunta:hover{
+            background-color: #00009f;
+        }
+
+        .pergunta{
+            width: 100% ;
+            padding: 3px;
+            height: 25px  ;
+            color: white;
+            background: #00005f;
+
+        }
+        .formulario{
+
+            width: 54%;
+            margin:auto;
+            background: #dddddd;
+        }
+
+        td {
+
+            border:1px solid #4054aa;
+            color: #4257af;
+            font-size:90%;
+            text-align:left;
+        }
+
+        .titulodoformulario:hover{
+            background-color: #00009f;
+        }
+
+        .titulodoformulario{
+
+            font-style: italic;
+            border:none;
+            text-align: center;
+            width: 100%;
+            color: white;
+            background: #000074;
+
+
+
+        }
+        fieldset{
+            margin: auto;
+            border:1px solid #c7c7c7;
+            width:95%;
+            background: #ffffff;
+
+        }
+
+
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Avaliação de Desempenho</title>
+
+</head>
+<body>
+
+<section class="formulario">
+    <form  name="form" method="POST" action="cadastrando_formulario.php">
+
+
+        <h1 class="titulodoformulario"> Avaliação de Desempenho </h1>
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td> <font size="4px">1ª)</font> O Funcionário faltou?</td>
+            </section>
+            <table  cellspacing="5" ><!--o segredo da caixa que envolve as questoes esta aqui que diz o tamanho da caixa e no fieldset. -->
+
+                <p>
+                    <tr  style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao1" >SIM</input><br> <hr>
+                            <input type="radio" value="NÃO" name="botao1" >NÃO</input>
+
+                        </section>
+
+                    </tr>
+                </p>
+
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td > <font size="4px">2º)</font> O funcionário chegou atrasado mais de duas vezes?</td>
+            </section>
+            <table cellspacing="10">
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao2">SIM</input><br><hr>
+                            <input type="radio" value="NAO" name="botao2">NÃO</input>
+                        </section>
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td > <font size="4px">3º)</font> O funcionário apresentou algum comportamento de reprovação? </td>
+            </section>
+            <table cellspacing="10">
+
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao3">SIM</input><br> <hr>
+                            <input type="radio" value="NAO" name="botao3">NÃO</input><br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea>
+
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 4º)</font> O funcionário apresentou melhoria de conhecimento?</td>
+            </section>
+            <table cellspacing="10">
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input  type="radio" value="SIM" name="botao4">SIM</input><br> <hr>
+                            <input type="radio" value="NAO" name="botao4">NÃO</input><br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea> <!--rows são linhas e cols são colunas -->
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 5º)</font> Qual o nível de comportamento você enxerga no funcionário?</td>
+            </section>
+            <table cellspacing="10">
+
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="Med" name="botao5">Excelente</input><br> <hr>
+                            <input type="radio" value="Exc" name="botao5">Médio</input> <br><br> <br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px "  name="Justificativa"> </textarea>
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 6º)</font> O funcionário colabora com melhorias para o setor e empresa?</td>
+            </section>
+            <table cellspacing="10">
+
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao6">SIM</input><br> <hr>
+                            <input type="radio" value="NAO" name="botao6">NÃO</input> <br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea>
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 7º)</font> O funcionário respeita as normais estabelecidas para o setor empresa?</td>
+            </section>
+            <table cellspacing="10">
+
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao7">SIM</input><br> <hr>
+                            <input type="radio" value="NAO" name="botao7">NÃO</input><br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea>
+
+
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 8º)</font> O setor e obrigações do funcionário está em dias?</td>
+            </section>
+            <table cellspacing="10">
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao8">SIM</input><br> <hr>
+                            <input type="radio" value="NAO" name="botao8">NÃO</input><br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea>
+
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 9º)</font> O funcionário exerce algum cargo de responsabilidade?</td>
+            </section>
+            <table cellspacing="10">
+
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao9">SIM</input> <br> <hr>
+                            <input type="radio" value="NAO" name="botao9">NÃO</input><br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea>
+
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <fieldset>
+            <section class="pergunta">
+                <td><font size="4px"> 10º)</font> Qual o nível de conhecimento do funcionário em relação aos seus pares?</td>
+            </section>
+            <table cellspacing="10">
+
+                <p>
+                    <tr style="color:black">
+
+                        <section class="respostas">
+                            <input type="radio" value="SIM" name="botao10">SIM</input> <br> <hr>
+                            <input type="radio" value="NAO" name="botao10">NÃO</input><br><br><br>
+                        </section>
+                        <em style="font-family: Verdana">Justifique:</em> <br>
+                        <textarea rows="5" cols="70" style=" border-radius:1px " name="Justificativa"></textarea>
+
+
+                    </tr>
+                </p>
+            </table>
+        </fieldset>
+        <br>
+
+
+
+        <input type="submit" style=" width: 180px" valor="ENVIAR">
+        <input type="reset" style="width: 150px"  value="Limpar Tudo">
+
+    </form>
+</section>
+</body>
+
+</html>
